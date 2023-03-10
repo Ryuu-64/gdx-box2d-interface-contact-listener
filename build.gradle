@@ -1,0 +1,18 @@
+apply plugin: 'java'
+
+group 'org.ryuu'
+version '1.0.0-1.9.9'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // https://mvnrepository.com/artifact/com.badlogicgames.gdx/gdx-box2d
+    implementation group: 'com.badlogicgames.gdx', name: 'gdx-box2d', version: '1.9.9'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
